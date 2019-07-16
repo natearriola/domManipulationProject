@@ -4,32 +4,26 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #dfdfdf;
 }
 
-.container {
-  height: 70vh;
-  width: 50vw;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[16];
-      grid-template-columns: repeat(16, 1fr);
-  -ms-grid-rows: minmax(16, 1fr);
-      grid-template-rows: minmax(16, 1fr);
-  border: 2px solid black;
-  padding: 100px 200px 100px 200px;
+.button-container {
+  padding: 50px;
 }
 
-.gridItems {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  border: 1px solid black;
-  background-color: blue;
+.button-container #reset {
+  height: 35px;
+  width: 150px;
+  background-color: yellow;
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */
